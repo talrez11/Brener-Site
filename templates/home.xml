@@ -8,8 +8,16 @@
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
-		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">			
+			<cms:template file="parts/header.xml"/>
+				<!-- content -->
+				<div class="wrap home">
+					<div class="inner_wrap">
+						<h1><cms:text constant="header_home"/></h1>
+						<h2><cms:text constant="header_desc_home"/></h2>					
+					</div>
+				</div>
+				<!-- end content -->
 		</body>
 	</html>
 </document>
