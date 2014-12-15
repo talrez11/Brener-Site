@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
-	<language name="English" short="en">
+	<language name="Hebrew" short="he" rtl="yes" default="yes">
 		<constant name="site_title">Site title</constant>
+		<constant name="about">אודות</constant>
+		<constant name="customers">לקוחות מספרים</constant>
+		<constant name="gallery">גלריה</constant>
+		<constant name="contact">דרכי הגעה ויצירת קשר</constant>
+		<constant name="phone">09-7654321</constant>
+		<constant name="header_home">מבצעי חורף חמים בגבעה בברנר</constant>
+		<constant name="header_desc_home">לאירוע מיוחד שלא תשכחו לעולם</constant>
+		<constant name="form_title">מלאו פרטים וקבלו ייעוץ אישי חינם</constant>
+		<constant name="form_title2">* אנחנו מתחייבים לא להעביר את פרטיך לאף גורם</constant>
 	</language>
 </document>
