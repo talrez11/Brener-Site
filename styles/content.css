@@ -1,0 +1,306 @@
+/**
+ *  Style Sheet
+ *  Brener-Site
+ *
+ * Copyright (c) 2014. Way2CU, http://way2cu.com
+ * Author: Tal Reznic
+ */
+div.inner_wrap {
+	display: block;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+ header{
+	background-color: #ebeff0;	
+	border-bottom: 1px solid black;
+ }
+ header div.inner_wrap{
+	position: relative;
+	max-width: 1200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+ }
+ /*logo*/
+ header div.inner_wrap > a:nth-of-type(1){
+ 	display: inline-block;
+ 	vertical-align: middle;
+ 	background-image: url(../images/logo.svg);
+ 	background-repeat: no-repeat;
+ 	background-position: right;
+ 	background-size: 80px;
+ 	width: 80px;
+ 	height: 80px;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ }
+ /*logo end*/
+  header div.inner_wrap nav{
+  	display: inline-block;
+  	vertical-align: middle;
+  }
+
+ header div.inner_wrap nav a{
+ 	display: inline-block;
+ 	vertical-align: middle;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ 	padding-right: 10px;
+ 	padding-left: 10px;
+ 	margin-right: 5px;
+ 	font-weight: bold;
+ 	font-size: 1.3rem;
+ 	color: black;
+ 	text-decoration: none;
+ }
+ header div.inner_wrap nav a:hover{
+ 	background-color: orange;
+ }
+ header div.inner_wrap > a:nth-of-type(2){
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	margin-top: -28px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 60px;
+	padding-right: 30px;
+	background-color: #70c5c5;
+	background-image: url(../images/icon-phone-white.svg);
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	background-position: 22px center;
+	font-size: 1.7rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+ }
+ /*content home.xml*/
+div.wrap.home {
+	background-image: url(../images/photo-frame.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1920px 1980px;
+	border: 1px solid black;
+	height: 600px;
+}
+div.wrap.home div.inner_wrap {
+   text-align: center;
+   padding-top: 30px;
+}
+div.wrap.home div.inner_wrap h1 {
+	display: block;
+	background-image: url(../images/logo.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 200px 200px;
+	margin-top:0px;
+	margin-bottom: 0px; 
+	padding-top: 220px;
+	font-size: 3rem;
+}
+
+/*about.xml*/
+div.wrap.white {
+	background-color: white;
+}
+div.wrap div.inner_wrap.about {
+   text-align: center;
+   padding-bottom: 80px;
+}
+div.wrap div.inner_wrap article {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+div.wrap div.inner_wrap article h1{
+	display: block;
+	font-size: 3rem;
+	margin-bottom: 0px;
+}
+div.wrap div.inner_wrap article h2{
+	display: block;
+	font-size: 2.2rem;
+	font-weight: 500;
+}
+div.wrap div.inner_wrap article p{
+    display: block;
+    font-weight: 500;
+}
+
+/*customers.xml*/
+
+div.wrap.white div.inner_wrap.customers{
+	text-align: center;
+	padding-bottom: 80px;
+}
+div.wrap.white div.inner_wrap.customers article{
+	width: 500px;
+}
+div.wrap.white div.inner_wrap.customers p{
+	text-align: right;
+	font-weight: 500;
+}
+div.wrap.white div.inner_wrap.customers p:nth-of-type(4){
+	text-align: left;
+}
+div.wrap.white div.inner_wrap.customers p:last-of-type{
+	text-align: left;
+}
+
+div.wrap.white div.inner_wrap.customers #testimonials{
+	position: relative;
+	width: 600px;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.wrap.white div.inner_wrap.customers #testimonials p{
+	text-align: center;
+}
+div.wrap.white div.inner_wrap.customers #testimonials p span{
+	display: block;
+}
+div.wrap.white div.inner_wrap.customers #testimonials p span:nth-of-type(1){
+	font-size: 1.8rem;
+	font-weight: bold;
+	background-image: url(../images/photo-frame.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 300px 300px;
+	padding-top: 340px;
+}
+div.wrap.white div.inner_wrap.customers #testimonials p span:nth-of-type(2){
+	font-size: 1.4rem;
+}
+div.wrap.white div.inner_wrap.customers #testimonials > div:nth-of-type(2){
+	position: absolute;
+	left: 0px;
+	bottom:0px;
+	width: 60px;
+	height: 60px;
+	background-color: black;
+	background-image: url(../images/arrow-left.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 30px 30px;
+	cursor: pointer;
+}
+div.wrap.white div.inner_wrap.customers #testimonials > div:nth-of-type(3){
+	position: absolute;
+	right: 0px;
+	bottom:0px;
+	width: 60px;
+	height: 60px;
+	background-color: black;
+	background-image: url(../images/arrow-right.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 30px 30px;
+	cursor: pointer;
+}
+/*Gallery*/
+div.wrap{
+	background-color: #bcc2c6;
+}
+div.wrap div.inner_wrap.gallery{
+	text-align: center;
+}
+
+div.wrap div.inner_wrap.gallery a {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 16vw;
+	height: 10vw;
+}
+
+div.wrap div.inner_wrap.gallery a img {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+	min-height: 100%;
+}
+
+/*contact*/
+
+div.wrap.white div.inner_wrap.contact{
+   padding-top: 20px;
+}
+/*contact_article*/
+div.wrap.white div.inner_wrap.contact div:nth-of-type(1){
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+	width: 500px
+}
+div.wrap.white div.inner_wrap.contact  div:nth-of-type(1) article{
+	background-image: url(../images/photo-frame.svg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 300px 300px;
+	padding-bottom: 200px;
+	padding-bottom: 320px;
+	width:500px;
+}
+div.wrap.white div.inner_wrap.contact div:nth-of-type(1) article p{
+	padding-top: 5px;
+	margin: 0px;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+/*contact_form*/
+div.wrap.white div.inner_wrap.contact div:nth-of-type(2){
+	display: inline-block;
+    width: 500px;
+    text-align: center;
+	vertical-align: top;
+	border: 2px solid #70c5c5;
+}
+div.wrap.white div.inner_wrap.contact div:nth-of-type(2) > span:nth-of-type(1) {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color:#70c5c5;
+	font-size: 1.8rem;
+	color: white; 
+}
+div.wrap.white div.inner_wrap.contact div:nth-of-type(2) > span:nth-of-type(2) {
+	display: block;
+	font-size: 1.1rem;
+}
+
+div.wrap.white div.inner_wrap.contact div:nth-of-type(2) form label {
+     display: block;
+     text-align: center;
+     padding-top: 25px
+}
+div.wrap.white div.inner_wrap.contact div:nth-of-type(2) form label span{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.4rem;
+	width: 120px;
+} 
+div.wrap.white div.inner_wrap.contact div:nth-of-type(2) form label input{
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid black;
+	font-size: 1.4rem;
+	height: 50px;
+} 
+}
+
+
+
+ 
