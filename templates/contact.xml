@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">			
+			<cms:template file="parts/header.xml"/>
+				<!-- content -->
+				<div class="wrap white">
+					<div class="inner_wrap contact">						
+				 		<div>				 			
+				 			<cms:module
+							name="articles"
+							action="show"
+							text_id="contact_article"
+							template="parts/article_noh1.xml"
+						    />
+						    
+					    </div>
+					    <div>
+					    	<span><cms:text constant="form_title"/></span>
+							<cms:module 
+			 				name="contact_form" 
+			 				action="show" 
+			 				text_id="contact_form"
+			 				/>
+			 				 <span><cms:text constant="form_title2"/></span>	
+			 		    </div>
+					</div>
+				</div>
+				<!-- end content -->
+		</body>
+	</html>
+</document>

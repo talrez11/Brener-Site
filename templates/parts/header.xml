@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+		<header
+			class="$section == 'home' ? 'home' : false"
+			cms:optional="class"
+			>
+			<div class="inner_wrap">
+				<a href="url_Make('','home')"
+			       class="logo"
+			       cms:eval="href"
+			    >	
+			    </a>
+				<nav>
+					<cms:template file="parts/main_menu.xml"/>
+				</nav>
+				<a href="#"><cms:text constant="phone"/>
+				</a>
+			</div>	
+		</header>
+</document>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">			
+			<cms:template file="parts/header.xml"/>
+				<!-- content -->
+				<div class="wrap white">
+					<div class="inner_wrap about">
+						<cms:module
+							name="articles"
+							action="show"
+							text_id="about_article"
+						/>
+						<div id="video_player"/>
+							<cms:module
+								name="youtube"
+								action="show"
+								text_id="about_video"
+								embed="1"
+								width="800"
+								height="600"
+								target="video_player"
+								theme="dark"
+								autohide="1"
+								/>
+						</div>
+				</div>
+				<!-- end content -->
+		</body>
+	</html>
+</document>

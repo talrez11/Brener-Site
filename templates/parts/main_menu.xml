@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+			
+			<a href="url_Make('','about')"
+			   cms:eval="href"
+			><cms:text constant="about"/>	
+			</a>
+			<a href="url_Make('','customers')"
+			   cms:eval="href"
+			><cms:text constant="customers"/>	
+			</a>
+			<a href="url_Make('','gallery')"
+			   cms:eval="href"
+			><cms:text constant="gallery"/>	
+			</a>
+			<a href="url_Make('','contact')"
+			   cms:eval="href"
+			><cms:text constant="contact"/>	
+			</a>					
+</document>
