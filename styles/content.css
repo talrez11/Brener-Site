@@ -13,6 +13,7 @@ div.inner_wrap {
 	position: relative;
 }
 
+/*Header.xml*/
  header{
 	background-color: #ebeff0;	
 	border-bottom: 1px solid black;
@@ -43,7 +44,7 @@ div.inner_wrap {
   	vertical-align: middle;
   }
 
- header div.inner_wrap nav a{
+ header div.inner_wrap nav a {
  	display: inline-block;
  	vertical-align: middle;
  	padding-top: 10px;
@@ -51,15 +52,21 @@ div.inner_wrap {
  	padding-right: 10px;
  	padding-left: 10px;
  	margin-right: 5px;
+ 	border:1px solid #ebeff0;
  	font-weight: bold;
  	font-size: 1.3rem;
  	color: black;
  	text-decoration: none;
+ 	transition:all 0.3s;
  }
- header div.inner_wrap nav a:hover{
- 	background-color: orange;
- }
- header div.inner_wrap > a:nth-of-type(2){
+
+header div.inner_wrap nav a:hover , header div.inner_wrap nav a.active {
+	border-color: #70c5c5;
+	background-color: #70c5c5;;
+  	color:white;
+}
+
+header div.inner_wrap > a:nth-of-type(2){
 	display: inline-block;
 	vertical-align: middle;
 	position: absolute;
@@ -79,8 +86,8 @@ div.inner_wrap {
 	font-weight: bold;
 	text-decoration: none;
 	color: white;
- }
- /*content home.xml*/
+}
+ /*home.xml*/
 div.wrap.home {
 	background-image: url(../images/photo-frame.svg);
 	background-repeat: no-repeat;
@@ -204,7 +211,7 @@ div.wrap.white div.inner_wrap.customers #testimonials > div:nth-of-type(3){
 	background-size: 30px 30px;
 	cursor: pointer;
 }
-/*Gallery*/
+/*Gallery.xml*/
 div.wrap{
 	background-color: #bcc2c6;
 }
@@ -230,15 +237,18 @@ div.wrap div.inner_wrap.gallery a img {
 	min-height: 100%;
 }
 
-/*contact*/
+/*contact.xml*/
 
 div.wrap.white div.inner_wrap.contact{
    padding-top: 20px;
 }
+
 /*contact_article*/
+
 div.wrap.white div.inner_wrap.contact div:nth-of-type(1){
 	display: inline-block;
 	vertical-align: top;
+	padding-left: 195px;
 	text-align: right;
 	width: 500px
 }
@@ -259,17 +269,19 @@ div.wrap.white div.inner_wrap.contact div:nth-of-type(1) article p{
 }
 
 /*contact_form*/
+
 div.wrap.white div.inner_wrap.contact div:nth-of-type(2){
 	display: inline-block;
     width: 500px;
+    
     text-align: center;
 	vertical-align: top;
 	border: 2px solid #70c5c5;
 }
 div.wrap.white div.inner_wrap.contact div:nth-of-type(2) > span:nth-of-type(1) {
 	display: block;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
 	background-color:#70c5c5;
@@ -279,6 +291,11 @@ div.wrap.white div.inner_wrap.contact div:nth-of-type(2) > span:nth-of-type(1) {
 div.wrap.white div.inner_wrap.contact div:nth-of-type(2) > span:nth-of-type(2) {
 	display: block;
 	font-size: 1.1rem;
+	background-color: rgb(241, 249, 249);
+	padding-bottom: 15px;
+}
+div.wrap.white div.inner_wrap.contact div:nth-of-type(2) form{
+	background-color: rgb(241, 249, 249)
 }
 
 div.wrap.white div.inner_wrap.contact div:nth-of-type(2) form label {
@@ -289,16 +306,49 @@ div.wrap.white div.inner_wrap.contact div:nth-of-type(2) form label {
 div.wrap.white div.inner_wrap.contact div:nth-of-type(2) form label span{
 	display: inline-block;
 	vertical-align: middle;
+	text-align: right;
 	font-size: 1.4rem;
 	width: 120px;
+
 } 
 div.wrap.white div.inner_wrap.contact div:nth-of-type(2) form label input{
 	display: inline-block;
 	vertical-align: middle;
-	border: 1px solid black;
+	text-align: right;
+	width: 325px;
+	border: 2px solid #bcc2c6;
 	font-size: 1.4rem;
 	height: 50px;
+	transition:all 0.3s;
+}
+div.wrap.white div.inner_wrap.contact div:nth-of-type(2) form label input:focus{
+    border:2px solid #70c5c5;
+}
+div.wrap.white div.inner_wrap.contact div:nth-of-type(2) form div.controls{
+	display: block;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 } 
+div.wrap.white div.inner_wrap.contact div:nth-of-type(2) form div.controls button{
+	background-color:#70c5c5;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 50px;
+	padding-left: 50px; 
+	color:white;
+	font-size: 2.1rem;
+	border: 1px solid #bcc2c6;
+	cursor: pointer;
+}
+
+/*GOOGLE MAP*/
+
+div.wrap.white div#map_canvas{
+	margin-top: 20px;
+	height:400px;
+	width: 100%;
+	overflow: hidden;
 }
 
 
