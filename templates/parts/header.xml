@@ -14,8 +14,14 @@
 				<nav>
 					<cms:template file="parts/main_menu.xml"/>
 				</nav>
-				<a href="#"><cms:text constant="phone"/>
+				<a
+					href="'tel:'.urlencode(Language::getText('phone'))"
+					cms:eval="href" 
+					class=""
+					>
+					<cms:text constant="phone"/>
 				</a>
+
 			</div>	
 		</header>
 </document>

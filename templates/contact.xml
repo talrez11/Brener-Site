@@ -6,6 +6,7 @@
 		<head>
 			<title><cms:text constant="site_title"/></title>
 			<cms:module name="head_tag" action="print_tag"/>
+			<script src="https://maps.googleapis.com/maps/api/js?language=iw"></script>
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">			
@@ -19,8 +20,7 @@
 							action="show"
 							text_id="contact_article"
 							template="parts/article_noh1.xml"
-						    />
-						    
+						    />						    
 					    </div>
 					    <div>
 					    	<span><cms:text constant="form_title"/></span>
@@ -31,6 +31,9 @@
 			 				/>
 			 				 <span><cms:text constant="form_title2"/></span>	
 			 		    </div>
+					</div>
+					<div id="map_canvas" >
+						
 					</div>
 				</div>
 				<!-- end content -->
