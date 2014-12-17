@@ -10,9 +10,9 @@ var Caracal = Caracal || {};
  
 function on_site_load() {
 
-	// create image lightbox
+		// create image lightbox
 	Caracal.lightbox = new LightBox('a.image.direct', false, false, true);
-
+    
 	// map Canvas
 	var image = "/site/images/map-pin.png";
 	var mapOptions = {
