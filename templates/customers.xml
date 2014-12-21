@@ -18,14 +18,22 @@
 							action="show"
 							text_id="customers_article"
 						/>
-						<div id="testimonials">
+						<div class="testimonials_container">
 							<cms:module
 								name="tips"
-								action="show"
+								action="show_list"
 								template="parts/testimonials.xml"
 							/>
-							<div></div>
-							<div></div>	
+							<a
+							 href="javascript:void(0);"
+							 class="arrow next"
+							 >
+							</a>
+							<a
+							 href="javascript:void(0);"
+							 class="arrow previous"
+							 >
+							</a>
 						</div>		
 					</div>
 				</div>
