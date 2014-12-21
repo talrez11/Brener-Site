@@ -14,6 +14,7 @@ div.inner_wrap {
 }
 
 /*Header.xml*/
+
  header{
 	background-color: #ebeff0;	
 	border-bottom: 1px solid black;
@@ -160,35 +161,51 @@ div.wrap.white div.inner_wrap.customers p:last-of-type{
 	text-align: left;
 }
 
-div.wrap.white div.inner_wrap.customers #testimonials{
+div.wrap.white div.inner_wrap.customers div.testimonials_container {
 	position: relative;
 	width: 600px;
 	padding-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
 }
-div.wrap.white div.inner_wrap.customers #testimonials p{
+
+div.wrap.white div.inner_wrap.customers div.testimonials_container div.testimonial {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 500px;
+	margin-left: -250px;
+	opacity: 0;
+	transition:opacity 0.3;
+}
+
+div.wrap.white div.inner_wrap.customers div.testimonials_container div.testimonial.visible {
+	opacity: 1;
+}
+
+
+div.wrap.white div.inner_wrap.customers div.testimonials_container p{
 	text-align: center;
 }
-div.wrap.white div.inner_wrap.customers #testimonials p span{
+div.wrap.white div.inner_wrap.customers div.testimonials_container p span{
 	display: block;
 }
-div.wrap.white div.inner_wrap.customers #testimonials p span:nth-of-type(1){
+div.wrap.white div.inner_wrap.customers div.testimonials_container p span:nth-of-type(1){
 	font-size: 1.8rem;
 	font-weight: bold;
 	background-image: url(../images/photo-frame.svg);
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: center;
 	background-size: 300px 300px;
 	padding-top: 340px;
 }
-div.wrap.white div.inner_wrap.customers #testimonials p span:nth-of-type(2){
+div.wrap.white div.inner_wrap.customers div.testimonials_container p span:nth-of-type(2){
 	font-size: 1.4rem;
 }
-div.wrap.white div.inner_wrap.customers #testimonials > div:nth-of-type(2){
+div.wrap.white div.inner_wrap.customers div.testimonials_container > a:nth-of-type(1){
 	position: absolute;
 	left: 0px;
-	bottom:0px;
+	top:350px;
 	width: 60px;
 	height: 60px;
 	background-color: black;
@@ -198,10 +215,10 @@ div.wrap.white div.inner_wrap.customers #testimonials > div:nth-of-type(2){
 	background-size: 30px 30px;
 	cursor: pointer;
 }
-div.wrap.white div.inner_wrap.customers #testimonials > div:nth-of-type(3){
+div.wrap.white div.inner_wrap.customers div.testimonials_container > a:nth-of-type(2){
 	position: absolute;
 	right: 0px;
-	bottom:0px;
+	top:350px;
 	width: 60px;
 	height: 60px;
 	background-color: black;
